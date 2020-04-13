@@ -5,7 +5,7 @@
   --primaryColor: #444444;
   --secondaryColor: #ffdd67;
   --tertiaryColor: #535945;
-  --jazz1: rgb(42, 126, 144);
+  --jazz1: #2a7e90;
   --jazz2: #165120;
   --jazz3: #031138;
   --jazz4: #013c40;
@@ -26,5 +26,34 @@ body {
   position: absolute;
   top: calc(50%);
   left: calc(50%);
-  transform: translate(-50%,-50%)
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  background: var(--rainbow);
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: -50rem 0 0 #165120, 5rem 0 0 #2a7e90;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    box-shadow: -5rem 0 0 #165120, 5rem 0 0 #2a7e90;
+  }
+
+  50% {
+    box-shadow: -5rem 0 0 #165120, 50rem 0 0 #2a7e90;
+  }
+
+  75% {
+    box-shadow: -5rem 0 0 #165120, 5rem 0 0 #2a7e90;
+  }
+
+  100% {
+    box-shadow: -50rem 0 0 #165120, 5rem 0 0 #2a7e90;
+    transform: rotate(360deg);
+  }
 }
