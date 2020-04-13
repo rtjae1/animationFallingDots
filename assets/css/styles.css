@@ -31,7 +31,7 @@ body {
   height: 5rem;
   background: var(--rainbow);
   border-radius: 50%;
-  animation: animate 1s linear infinite;
+  animation: animate 3s linear infinite;
 }
 
 @keyframes animate {
